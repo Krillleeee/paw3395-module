@@ -1,7 +1,7 @@
 #ifndef ZEPHYR_INCLUDE_PAW3395_H_
 #define ZEPHYR_INCLUDE_PAW3395_H_
 
-#include "../pixart.h"
+#include "pixart.h"
 
 /**
  * @file paw3395.h
