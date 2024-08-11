@@ -6,8 +6,10 @@
 
 #define DT_DRV_COMPAT pixart_paw3395
 
-#include <kernel.h>
-#include <sys/byteorder.h>
+#include <zephyr/kernel.h>
+#include <zephyr/sys/byteorder.h>
+#include <zephyr/input/input.h>
+
 #include "paw3395.h"
 
 #include <logging/log.h>
