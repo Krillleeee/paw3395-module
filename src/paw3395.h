@@ -9,7 +9,7 @@
  * @brief Header file for the paw3395 driver.
  */
 
-#include <drivers/sensor.h>
+#include <zephyr/drivers/sensor.h>
 
 #ifdef __cplusplus
 extern "C" {
