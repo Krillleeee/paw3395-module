@@ -890,12 +890,12 @@ static int paw3395_async_init_configure(const struct device *dev)
 
 
   // rest mode
-	if (!err) {
-    if(IS_ENABLED(CONFIG_PAW3395_ENABLE_REST))
-      err = set_rest_mode(dev, true);
-    else
-      err = set_rest_mode(dev, false);
-	}
+	//if (!err) {
+    //if(IS_ENABLED(CONFIG_PAW3395_ENABLE_REST))
+      //err = set_rest_mode(dev, true);
+    //else
+      //err = set_rest_mode(dev, false);
+	//}
 
   // clear motion registers and ready to go
 	for (uint8_t reg = 0x02; (reg <= 0x06) && !err; reg++) {
