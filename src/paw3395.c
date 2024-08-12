@@ -913,8 +913,9 @@ static int paw3395_async_init_configure(const struct device *dev)
 
 // checked and keep
 static void paw3395_async_init(struct k_work *work)
-{
-	struct pixart_data *data = CONTAINER_OF(work, struct pixart_data, init_work);
+{	
+	struct k_work_delayable *work2 = (struct k_work_delayable *)work;
+	struct pixart_data *data = CONTAINER_OF(work2, struct pixart_data, init_work);
 	
 	const struct device *dev = data->dev;
 
